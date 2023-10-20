@@ -16,6 +16,16 @@ MAF900_final <- dbConnect(
   extended_types = TRUE  
 )
 
+##wrds connection
+library(RPostgres)
+wrds <- dbConnect(Postgres(),
+                  host='wrds-pgdata.wharton.upenn.edu',
+                  port=9737,
+                  dbname='wrds',
+                  sslmode='require',
+                  user='razasohailalig')
+
+
 # prepare the data 
 # Collect Data from CRSP 
 start_date <- ymd("1926-01-01")
