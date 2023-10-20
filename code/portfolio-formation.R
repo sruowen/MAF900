@@ -5,7 +5,6 @@ library(slider)
 library(dbplyr)
 library(furrr)
 
-
 ####construct the Fisher's Arithmetic Index as the proxy for the market return
 market_return_monthly <- crsp_monthly %>% 
   select(permno, date, ret) %>% 
@@ -56,6 +55,7 @@ for (i in 1:22) {
   
   # determine the number of the stocks in each portfolio
   
+  
   N = nrow(current_dataset)
   group_size = round(N/20)
   first_size = group_size + round(0.5*(N - 20*group_size))
@@ -64,3 +64,4 @@ for (i in 1:22) {
   
   assign(paste("stock_beta_forming", i, sep = ""), stock_beta_forming)
 }
+
