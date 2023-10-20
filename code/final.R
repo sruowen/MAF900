@@ -23,7 +23,7 @@ wrds <- dbConnect(Postgres(),
                   port=9737,
                   dbname='wrds',
                   sslmode='require',
-                  user='razasohailalig')
+                  user='')
 
 
 # prepare the data 
