@@ -87,4 +87,4 @@ file_name <- paste0("output/", "portfolio_beta_estimation",i, ".csv")
 write_csv(temp, file_name)
 
 }
-
+## The CSV files for table2 that will be used in RMarkdown
