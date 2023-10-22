@@ -1,0 +1,11 @@
+This is group project to replicate table 1 to table 4 of Fama-MacBeth (1973) paper.
+The code folder has 7 R script.
+Final.R is sample code to extract the data used for the replication using WRDS AND Fama-Fench website.
+Table1.R is the code for replication table 1 of the original paper.
+Portfolio-formation.R is code to form 20 portfolios based on the original paper.
+Table2.R is the code for replication table 2 of the original paper.
+estima_beta-for_testing_table3 is the CAPM estimation code.
+Table3.R is the code for replication table 3 of the original paper.
+Table4.R is the code for replication table 4 of the original paper.
+Final_Report.Rmd is the mardown file for compiling results of the replication and provide brief analysis.
+Final_Report.pdf is the pdf copy of our final report.
